@@ -2,7 +2,6 @@
     width: 100%;
     display: block;
     padding: 0;
-    margin: 0;
 }
 .grid.wide{
     max-width: 1200px;
@@ -15,6 +14,64 @@
     margin-left: -4px;
     margin-right: -4px;
 }
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+.c-0{
+    display: none; /* For mobile: ẩn đi cột */
+}
+.c-1{   /* col-1 : chiếm 1 cột cơ sở */
+    flex: 0 0 8.33333%; /* 100%/12 cột x 1 cột = 8.333333% */
+    max-width: 8.33333%;
+}
+.c-2{   /* col-1 : chiếm 2 cột cơ sở */
+    flex: 0 0 16.66667%; /* 100%/12 cột x 2 cột*/
+    max-width: 16.66667%;
+}
+.c-3{   /* col-1 : chiếm 3 cột cơ sở */
+    flex: 0 0 25%; /* 100%/12 cột x 3 cột*/
+    max-width: 25%;
+}
+.c-4{   /* col-1 : chiếm 4 cột cơ sở */
+    flex: 0 0 33.33333%; /* 100%/12 cột x 4 cột*/
+    max-width: 33.33333%;
+}
+.c-5{   /* col-1 : chiếm 5 cột cơ sở */
+    flex: 0 0 41.66667%; /* 100%/12 cột x 5 cột*/
+    max-width: 41.66667%;
+}
+.c-6{   /* col-1 : chiếm 6 cột cơ sở */
+    flex: 0 0 50%; /* 100%/12 cột x 6 cột*/
+    max-width: 50%;
+}
+.c-7{   /* col-1 : chiếm 7 cột cơ sở */
+    flex: 0 0 58.33333%; /* 100%/12 cột x 7 cột*/
+    max-width: 58.33333%;
+}
+.c-8{   /* col-1 : chiếm 8 cột cơ sở */
+    flex: 0 0 66.66667%; /* 100%/12 cột x 8 cột*/
+    max-width: 66.66667%;
+}
+.c-9{   /* col-1 : chiếm 9 cột cơ sở */
+    flex: 0 0 75%; /* 100%/12 cột x 9 cột*/
+    max-width: 75%;
+}
+.c-10{   /* col-1 : chiếm 10 cột cơ sở */
+    flex: 0 0 83.33333%; /* 100%/12 cột x 10 cột*/
+    max-width: 83.33333%;
+}
+.c-11{   /* col-1 : chiếm 11 cột cơ sở */
+    flex: 0 0 91.66667%; /* 100%/12 cột x 11 cột*/
+    max-width: 91.66667%;
+}
+.c-12{   /* col-1 : chiếm 12 cột cơ sở */
+    flex: 0 0 100%; /* 100%/12 cột x 12 cột*/
+    max-width: 100%;
+}
+
+
 
 
 
@@ -26,24 +83,169 @@
 
 
 /* Tablet -> PC low resolution  */
-@media screen and (min-width: 740px) and (max-width: 1023px){
-    .wide{
-        width: 644px;
-    }
-}
+
 @media screen and (min-width: 740px){
     .row{
         margin-left: -8px;
         margin-right: -8px;
     }
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+        
+    }
+    .m-0{
+        display: none; /* ẩn 1 cột trên tablet */
+    }
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,
+    .m-10,
+    .m-11,
+    .m-12{
+        display: block;
+    }
+    .m-1{   /* col-1 : chiếm 1 cột cơ sở */
+        flex: 0 0 8.33333%; /* 100%/12 cột x 1 cột = 8.333333% */
+        max-width: 8.33333%;
+    }
+    .m-2{   /* col-1 : chiếm 2 cột cơ sở */
+        flex: 0 0 16.66667%; /* 100%/12 cột x 2 cột*/
+        max-width: 16.66667%;
+    }
+    .m-3{   /* col-1 : chiếm 3 cột cơ sở */
+        flex: 0 0 25%; /* 100%/12 cột x 3 cột*/
+        max-width: 25%;
+    }
+    .m-4{   /* col-1 : chiếm 4 cột cơ sở */
+        flex: 0 0 33.33333%; /* 100%/12 cột x 4 cột*/
+        max-width: 33.33333%;
+    }
+    .m-5{   /* col-1 : chiếm 5 cột cơ sở */
+        flex: 0 0 41.66667%; /* 100%/12 cột x 5 cột*/
+        max-width: 41.66667%;
+    }
+    .m-6{   /* col-1 : chiếm 6 cột cơ sở */
+        flex: 0 0 50%; /* 100%/12 cột x 6 cột*/
+        max-width: 50%;
+    }
+    .m-7{   /* col-1 : chiếm 7 cột cơ sở */
+        flex: 0 0 58.33333%; /* 100%/12 cột x 7 cột*/
+        max-width: 58.33333%;
+    }
+    .m-8{   /* col-1 : chiếm 8 cột cơ sở */
+        flex: 0 0 66.66667%; /* 100%/12 cột x 8 cột*/
+        max-width: 66.66667%;
+    }
+    .m-9{   /* col-1 : chiếm 9 cột cơ sở */
+        flex: 0 0 75%; /* 100%/12 cột x 9 cột*/
+        max-width: 75%;
+    }
+    .m-10{   /* col-1 : chiếm 10 cột cơ sở */
+        flex: 0 0 83.33333%; /* 100%/12 cột x 10 cột*/
+        max-width: 83.33333%;
+    }
+    .m-11{   /* col-1 : chiếm 11 cột cơ sở */
+        flex: 0 0 91.66667%; /* 100%/12 cột x 11 cột*/
+        max-width: 91.66667%;
+    }
+    .m-12{   /* col-1 : chiếm 12 cột cơ sở */
+        flex: 0 0 100%; /* 100%/12 cột x 12 cột*/
+        max-width: 100%;
+    }
+
+
+
 }
 @media screen and (min-width: 1113px){
     .row{
         margin-left: -12px;
         margin-right: -12px;
     }
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+        
+    }
+    .l-0{
+        display: none; /* ẩn 1 cột trên PC */
+    }
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,
+    .l-10,
+    .l-11,
+    .l-12{
+        display: block;
+    }
+    .l-1{   /* col-1 : chiếm 1 cột cơ sở */
+        flex: 0 0 8.33333%; /* 100%/12 cột x 1 cột = 8.333333% */
+        max-width: 8.33333%;
+    }
+    .l-2{   /* col-1 : chiếm 2 cột cơ sở */
+        flex: 0 0 16.66667%; /* 100%/12 cột x 2 cột*/
+        max-width: 16.66667%;
+    }
+    .l-3{   /* col-1 : chiếm 3 cột cơ sở */
+        flex: 0 0 25%; /* 100%/12 cột x 3 cột*/
+        max-width: 25%;
+    }
+    .l-4{   /* col-1 : chiếm 4 cột cơ sở */
+        flex: 0 0 33.33333%; /* 100%/12 cột x 4 cột*/
+        max-width: 33.33333%;
+    }
+    .l-5{   /* col-1 : chiếm 5 cột cơ sở */
+        flex: 0 0 41.66667%; /* 100%/12 cột x 5 cột*/
+        max-width: 41.66667%;
+    }
+    .l-6{   /* col-1 : chiếm 6 cột cơ sở */
+        flex: 0 0 50%; /* 100%/12 cột x 6 cột*/
+        max-width: 50%;
+    }
+    .l-7{   /* col-1 : chiếm 7 cột cơ sở */
+        flex: 0 0 58.33333%; /* 100%/12 cột x 7 cột*/
+        max-width: 58.33333%;
+    }
+    .l-8{   /* col-1 : chiếm 8 cột cơ sở */
+        flex: 0 0 66.66667%; /* 100%/12 cột x 8 cột*/
+        max-width: 66.66667%;
+    }
+    .l-9{   /* col-1 : chiếm 9 cột cơ sở */
+        flex: 0 0 75%; /* 100%/12 cột x 9 cột*/
+        max-width: 75%;
+    }
+    .l-10{   /* col-1 : chiếm 10 cột cơ sở */
+        flex: 0 0 83.33333%; /* 100%/12 cột x 10 cột*/
+        max-width: 83.33333%;
+    }
+    .l-11{   /* col-1 : chiếm 11 cột cơ sở */
+        flex: 0 0 91.66667%; /* 100%/12 cột x 11 cột*/
+        max-width: 91.66667%;
+    }
+    .l-12{   /* col-1 : chiếm 12 cột cơ sở */
+        flex: 0 0 100%; /* 100%/12 cột x 12 cột*/
+        max-width: 100%;
+    }
+
 }
 
+@media screen and (min-width: 740px) and (max-width: 1023px){
+    .wide{
+        width: 644px;
+    }
+}
 
 /* PC high resolution  */
 @media screen and (min-width: 1024px) and (max-width: 1239px){
@@ -54,4 +256,75 @@
         margin-left: -12px;
         margin-right: -12px;
     }
+    .wide .col {
+        padding-left: 12px;
+        padding-right: 12px;
+        
+    }
+    .wide .l-0{
+        display: none; /* ẩn 1 cột trên PC */
+    }
+    .wide .l-1,
+    .wide .l-2,
+    .wide .l-3,
+    .wide .l-4,
+    .wide .l-5,
+    .wide .l-6,
+    .wide .l-7,
+    .wide .l-8,
+    .wide .l-9,
+    .wide .l-10,
+    .wide .l-11,
+    .wide .l-12{
+        display: block;
+    }
+    .wide .l-1{   /* col-1 : chiếm 1 cột cơ sở */
+        flex: 0 0 8.33333%; /* 100%/12 cột x 1 cột = 8.333333% */
+        max-width: 8.33333%;
+    }
+    .wide .l-2{   /* col-1 : chiếm 2 cột cơ sở */
+        flex: 0 0 16.66667%; /* 100%/12 cột x 2 cột*/
+        max-width: 16.66667%;
+    }
+    .wide .l-3{   /* col-1 : chiếm 3 cột cơ sở */
+        flex: 0 0 25%; /* 100%/12 cột x 3 cột*/
+        max-width: 25%;
+    }
+    .wide .l-4{   /* col-1 : chiếm 4 cột cơ sở */
+        flex: 0 0 33.33333%; /* 100%/12 cột x 4 cột*/
+        max-width: 33.33333%;
+    }
+    .wide .l-5{   /* col-1 : chiếm 5 cột cơ sở */
+        flex: 0 0 41.66667%; /* 100%/12 cột x 5 cột*/
+        max-width: 41.66667%;
+    }
+    .wide .l-6{   /* col-1 : chiếm 6 cột cơ sở */
+        flex: 0 0 50%; /* 100%/12 cột x 6 cột*/
+        max-width: 50%;
+    }
+    .wide .l-7{   /* col-1 : chiếm 7 cột cơ sở */
+        flex: 0 0 58.33333%; /* 100%/12 cột x 7 cột*/
+        max-width: 58.33333%;
+    }
+    .wide .l-8{   /* col-1 : chiếm 8 cột cơ sở */
+        flex: 0 0 66.66667%; /* 100%/12 cột x 8 cột*/
+        max-width: 66.66667%;
+    }
+    .wide .l-9{   /* col-1 : chiếm 9 cột cơ sở */
+        flex: 0 0 75%; /* 100%/12 cột x 9 cột*/
+        max-width: 75%;
+    }
+    .wide .l-10{   /* col-1 : chiếm 10 cột cơ sở */
+        flex: 0 0 83.33333%; /* 100%/12 cột x 10 cột*/
+        max-width: 83.33333%;
+    }
+    .wide .l-11{   /* col-1 : chiếm 11 cột cơ sở */
+        flex: 0 0 91.66667%; /* 100%/12 cột x 11 cột*/
+        max-width: 91.66667%;
+    }
+    .wide .l-12{   /* col-1 : chiếm 12 cột cơ sở */
+        flex: 0 0 100%; /* 100%/12 cột x 12 cột*/
+        max-width: 100%;
+    }
+    
 }
