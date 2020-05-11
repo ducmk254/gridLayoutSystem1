@@ -8,12 +8,21 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-/* PC high resolution  */
-@media screen and (min-width: 1024px) and (max-width: 1239px){
-    .wide{
-        width: 644px;
-    }
+
+.row{
+    display: flex; /* item nằm ngang*/
+    flex-wrap: wrap;  /* chiều rộng của item vượt quá chiều rộng thĩ xuống hàng*/
+    margin-left: -4px;
+    margin-right: -4px;
 }
+
+
+
+
+
+
+
+
 
 
 /* Tablet -> PC low resolution  */
@@ -22,4 +31,27 @@
         width: 644px;
     }
 }
+@media screen and (min-width: 740px){
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+@media screen and (min-width: 1113px){
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
 
+
+/* PC high resolution  */
+@media screen and (min-width: 1024px) and (max-width: 1239px){
+    .wide{
+        width: 984px;
+    }
+    .wide .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
